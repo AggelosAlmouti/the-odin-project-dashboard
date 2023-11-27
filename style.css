@@ -36,16 +36,25 @@ nav .items {
     gap: 0.5rem;
 }
 
-nav .items img {
+nav .items svg {
     height: auto;
     width: 1.5rem;
+    fill: white;
 }
 
-nav .items li a{
+nav .items li a {
     display: flex;
     align-items: center;
     gap: 1rem;
     color: white;
+}
+
+nav .items li {
+    transition: transform 0.3s;
+}
+
+nav .items li:hover {
+    transform: translateY(-3px);
 }
 
 nav .title {
@@ -55,10 +64,10 @@ nav .title {
     color: white;
 }
 
-nav .title>img {
+nav .title>svg {
     height: auto;
     width: 3rem;
-    fill: black;
+    fill: white;
 }
 
 /* header */
