@@ -78,15 +78,47 @@ nav .title>svg {
 /* header */
 header {
     grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: left;
+    padding-left: 3rem;
+    box-shadow: 0 4px 10px -5px gray;
 }
 
 header svg {
     height: auto;
-    width: 1.5rem;
+    width: 2rem;
+}
+
+header .search {
+    display: flex;
+    gap: 1rem;
 }
 
 header .search_bar {
     width: 20rem;
+}
+
+header .notifications {
+    display: flex;
+    gap: 1rem;
+}
+
+header .profile {
+    display: flex;
+    gap: 1rem;
+}
+
+header .profile svg {
+    height: auto;
+    width: 4rem;
+}
+
+header .buttons {
+    display: flex;
+    gap: 1rem;
 }
 
 /* content */
