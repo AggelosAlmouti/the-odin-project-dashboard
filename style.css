@@ -26,7 +26,12 @@ nav {
     background-color: #0ea5e9;
     color: white;
     font-weight: bold;
-    padding: 1rem;
+    padding-left: 1rem;
+}
+
+nav .nav_sticky {
+    position: sticky;
+    top: 0px;
 }
 
 nav .items {
@@ -75,6 +80,16 @@ header {
     grid-column: 2 / 4;
 }
 
+header svg {
+    height: auto;
+    width: 1.5rem;
+}
+
+header .search_bar {
+    width: 20rem;
+}
+
+/* content */
 content .project_cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
