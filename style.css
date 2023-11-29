@@ -17,13 +17,13 @@ a {
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 /* navigation */
 nav {
     grid-row: 1 / 3;
-    background-color: #0ea5e9;
+    background-color: #0284c7;
     color: white;
     font-weight: bold;
     padding-left: 1rem;
@@ -80,16 +80,15 @@ header {
     grid-column: 2 / 4;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-items: left;
-    padding-left: 3rem;
+    padding: 0 1rem 0 2rem;
     box-shadow: 0 4px 10px -5px gray;
 }
 
 header svg {
     height: auto;
-    width: 2rem;
+    width: 1.5rem;
 }
 
 header .search {
@@ -98,17 +97,26 @@ header .search {
 }
 
 header .search_bar {
-    width: 20rem;
+    width: 25rem;
+    height: 1px;
+    background-color: #cbd5e1;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    color: #475569;
 }
 
 header .notifications {
     display: flex;
     gap: 1rem;
+    padding-left: 5rem;
 }
 
 header .profile {
     display: flex;
     gap: 1rem;
+    font-weight: bold;
 }
 
 header .profile svg {
@@ -116,9 +124,23 @@ header .profile svg {
     width: 4rem;
 }
 
+header .profile .username h2,
+header .profile .username p {
+    margin: 0;
+}
+
 header .buttons {
     display: flex;
     gap: 1rem;
+}
+
+header button {
+    background-color: #0284c7;
+    border: none;
+    border-radius: 1rem;
+    padding: 7px 20px 7px 20px;
+    color: white;
+    font-weight: bold;
 }
 
 /* content */
