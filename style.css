@@ -94,6 +94,7 @@ header svg {
 header .search {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
 header .search_bar {
@@ -107,10 +108,23 @@ header .search_bar {
     color: #475569;
 }
 
+header .search .click:hover {
+    fill: gray;
+}
+
 header .notifications {
     display: flex;
     gap: 1rem;
     padding-left: 5rem;
+    align-items: center;
+}
+
+header .notifications .transition {
+    transition: transform 0.3s;
+}
+
+header .notifications .transition:hover {
+    transform: translateY(-3px);
 }
 
 header .profile {
@@ -141,6 +155,11 @@ header button {
     padding: 7px 20px 7px 20px;
     color: white;
     font-weight: bold;
+}
+
+header button:hover {
+    cursor: pointer;
+    background-color: #0ea5e9;
 }
 
 /* content */
