@@ -84,6 +84,7 @@ header {
     justify-items: left;
     padding: 0 1rem 0 2rem;
     box-shadow: 0 4px 10px -5px gray;
+    z-index: 1;
 }
 
 header svg {
@@ -100,12 +101,12 @@ header .search {
 header .search_bar {
     width: 25rem;
     height: 1px;
-    background-color: #cbd5e1;
+    background-color: #e2e8f0;
     border: none;
     border-radius: 20px;
     padding: 15px;
     outline: none;
-    color: #475569;
+    color: #64748b;
 }
 
 header .search .click:hover {
@@ -163,12 +164,27 @@ header button:hover {
 }
 
 /* content */
+content {
+    background-color: #e2e8f0;
+}
+
 content .project_cards {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 10px;
+    margin: 0 2rem 5rem 2rem;
+}
+
+content h3 {
+    margin: 2rem 2rem 0.5rem 2rem;
 }
 
 content .project {
     border: 1px solid black;
+    background-color: white;
+}
+
+/* aside */
+aside {
+    background-color: #e2e8f0;
 }
