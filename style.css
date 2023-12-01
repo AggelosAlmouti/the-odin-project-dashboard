@@ -187,7 +187,7 @@ content .project {
     border-radius: 3%;
     padding: 1rem;
     display: grid;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
 }
 
 content .project svg {
@@ -196,9 +196,10 @@ content .project svg {
 }
 
 content .project .buttons {
-    grid-row: 3 / 4;
     display: flex;
     gap: 1rem;
+    align-items: end;
+    justify-content: end;
 }
 
 content .project .buttons a:hover {
@@ -208,14 +209,12 @@ content .project .buttons a:hover {
 content .project .title {
     font-weight: bold;
     margin-bottom: 0;
-    grid-row: 1 / 2;
 }
 
 content .project .description {
     color: gray;
     font-size: small;
     margin-top: 0;
-    grid-row: 2 / 3;
 }
 
 /* aside */
