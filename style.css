@@ -188,6 +188,12 @@ content .project {
     padding: 1rem;
     display: grid;
     grid-template-rows: 1fr 3fr 1fr;
+    transition: transform 0.3s;
+}
+
+content .project:hover {
+    cursor: pointer;
+    transform: translateY(-3px);
 }
 
 content .project svg {
@@ -271,4 +277,9 @@ aside .trending svg {
 
 aside .trending .name {
     color: black;
+}
+
+aside .trending a:hover,
+aside .announcements a:hover {
+    color: orange;
 }
